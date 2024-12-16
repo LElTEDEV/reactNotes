@@ -4,8 +4,8 @@ type TagProps = {
     title: string
 }
 
-export function Tag ({title}: TagProps) {
-    return <Container>
+export function Tag ({title, ...rest}: TagProps) {
+    return <Container {...rest}>
         {title}
     </Container>
 }
