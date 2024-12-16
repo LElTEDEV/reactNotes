@@ -1,5 +1,7 @@
 import { Container, Form } from "./styles";
 
+import { Link } from "react-router-dom";
+
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
@@ -16,7 +18,7 @@ export function New () {
                 <Form>
                     <header>
                         <h1>Criar nota</h1>
-                        <a href="/">voltar</a>
+                        <Link to='/'>voltar</Link>
                     </header>
 
                     <Input placeholder="Título"/>
@@ -25,13 +27,13 @@ export function New () {
 
                     <Section title="Links úteis">
                         <NoteItem isNew placeholder="https://exemplo.com"/>
-                        <NoteItem value="https://asernet.com.br"/>
+                        {/* <NoteItem value="https://asernet.com.br"/> */}
                     </Section>
 
                     <Section title="Marcadores">
                         <div className="tags">
                             <NoteItem isNew placeholder="express"/>
-                            <NoteItem value="React"/>
+                            {/* <NoteItem value="React"/> */}
                         </div>
                     </Section>
 

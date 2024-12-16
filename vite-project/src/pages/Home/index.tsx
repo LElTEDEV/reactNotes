@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles";
 
 import { FiPlus, FiSearch } from "react-icons/fi"; 
@@ -41,7 +42,7 @@ export function Home () {
                 </Section>
             </Content>
 
-            <NewNote>
+            <NewNote to="/new">
                 <FiPlus />
                 Criar nota
             </NewNote>
